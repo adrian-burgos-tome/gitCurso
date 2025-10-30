@@ -1,5 +1,5 @@
 Algoritmo minicalculadora
-  Definir num_a, num_b, num_res, num_sum, num_mul como Real;
+  Definir num_a, num_b, num_res, num_sum, num_mul, num_div como Real;
   Definir opcion como Entero;
   
   Escribir "Introducir numero a";
@@ -20,11 +20,17 @@ Algoritmo minicalculadora
 		  si (opcion=3) entonces
 			  num_mul <- num_a * num_b;
 			  Escribir "La multiplicación de ", num_a, " y de ", num_b," es de ", num_mul;
-		  SiNo
-			  Escribir "Orden no válida";
+		        SiNo
+			 si (opcion=4) entonces
+		          num_div <- num_a / num_b;
+				  Escribir "La división de ", num_a, " y de ", num_b," es de ", num_div;
+			  SiNo
+				  Escribir "Esta orden es inválida";
 		  finsi
      finsi
  finsi
+FinSi
+
  
 FinAlgoritmo
   
